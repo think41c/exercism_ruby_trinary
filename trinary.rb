@@ -4,9 +4,11 @@ class Trinary
   end
 
   def to_decimal
-    p "Trinary_num in reverse is #{@trinary_num.reverse}"
-    p @trinary_num.reverse.class
-    p @trinary_num[0].to_i 
+    digit_to_check = 0 
+    power_to_use   = 0 
+
+    result = @trinary_num[digit_to_check] * 3**power_to_use
+    result.to_i
   end
 end 
 
