@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'trinary'
 
 class TrinaryTest < Minitest::Test
