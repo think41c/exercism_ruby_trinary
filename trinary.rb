@@ -4,8 +4,9 @@ class Trinary
   end
 
   def to_decimal
-    puts "Trinary_num in reverse is #{@trinary_num.reverse}"
-    1
+    p "Trinary_num in reverse is #{@trinary_num.reverse}"
+    p @trinary_num.reverse.class
+    p @trinary_num[0].to_i 
   end
 end 
 
