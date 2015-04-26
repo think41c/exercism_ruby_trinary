@@ -1,6 +1,7 @@
 class Trinary
   def initialize(trinary_num)
-    @trinary_num = trinary_num.reverse
+    @num_of_digits = trinary_num.length
+    @trinary_num   = trinary_num.reverse
   end
 
   def to_decimal
@@ -12,7 +13,6 @@ class Trinary
     num_of_digits  = @trinary_num.length
 
     until x == num_of_digits
-      p "x = #{x} , and Trinary = #{@trinary_num}. 3**x = #{3**x}. Trinary[x] = #{@trinary_num[x]}"
       p @trinary_num[x] * 3**x
       result = @trinary_num[x] * 3**x
       p "Result = #{result}"

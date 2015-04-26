@@ -12,6 +12,7 @@ class TrinaryTest < Minitest::Test
   end
 
   def test_trinary_10_is_decimal_3
+    skip
     assert_equal 3, Trinary.new('10').to_decimal
   end
 
