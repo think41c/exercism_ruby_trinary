@@ -14,15 +14,10 @@ class Trinary
 
     until x == num_of_digits
       trinary_digit = @trinary_num[x].to_i
-      p trinary_digit
       result = trinary_digit * 3**x
-      p "Result = #{result}"
       x += 1
-      p "**************"
       total += result
     end 
     total
   end
 end 
-
-p Trinary.new('19').to_decimal
