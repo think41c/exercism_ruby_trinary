@@ -12,7 +12,6 @@ class Trinary
 
     until x == num_of_digits
       result = @trinary_num[digit_to_check] * 3**power_to_use
-        # result.to_i += result  #--- Needs to be keeping a summed total
       x += 1
     end 
     result.to_i
