@@ -9,8 +9,6 @@ class Trinary
     x              = 0
     total          = 0 
 
-# Test for GitHub commit
-
     until x == @num_of_digits
       trinary_digit = @trinary_num[x].to_i
       result = trinary_digit * 3**x
