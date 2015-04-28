@@ -6,15 +6,15 @@ class Trinary
 
   def to_decimal
     result         = 0
-    x              = 0
+    counter        = 0
     total          = 0 
 
-    until x == @num_of_digits
-      trinary_digit = @trinary_num[x].to_i
-      result = trinary_digit * 3**x
-      x += 1
+    until counter == @num_of_digits
+      trinary_digit = @trinary_num[counter].to_i
+      result = trinary_digit * 3**counter
+      counter += 1
       total += result
     end 
-    total
+    total 
   end
 end 
